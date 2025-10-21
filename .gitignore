@@ -1,0 +1,33 @@
+# Archivos y carpetas locales que no son parte del desarrollo
+api_key_prueba_0.png
+api_key_prueba_0.txt
+contexto.txt
+houzez/
+houzez_v4.1.0.zip
+motopress-hotel-booking-lite.5.2.3.zip
+schemas/
+
+# Configuración SFTP (no incluir en repositorio)
+.vscode/sftp.json
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Dependencias y caché
+node_modules/
+dist/
+build/
+
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+
+# IDE
+.idea/
+*.sublime-workspace
+*.sublime-project
