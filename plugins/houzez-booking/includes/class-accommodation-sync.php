@@ -282,6 +282,11 @@ class HZB_Accommodation_Sync {
         $response = $api_handler->create_accommodation_type($request);
         
         if (!is_wp_error($response)) {
+            $accommodation_id = $response->get_data()['id'];
+            if ($accommodation_id) {
+                $shortcode = '[mphb_availability_calendar id="' . $accommodation_id . '"]';
+                update_post_meta($property_id, 'fave_booking_shortcode', $shortcode);
+            }
             update_post_meta($property_id, '_hzb_sync_status', 'synced');
             update_post_meta($property_id, '_hzb_last_sync', current_time('timestamp'));
             return true;
