@@ -1,4 +1,4 @@
-# Houzez WordPress Project
+# Houzez Booking
 
 This repository contains a WordPress project centered around the **Houzez real estate theme**. It includes a custom child theme and a bespoke plugin designed to integrate Houzez with the **MotoPress Hotel Booking plugin** for comprehensive property booking management.
 
